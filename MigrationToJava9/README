@@ -1,0 +1,20 @@
+Migration step-by-step:
+
+In Part1:
+Everything is running in the class-path, therefore we have no reliable configuration nor strong encapsulation.
+The code will be run in an unnamed module, which is totally opened and exports all its packages.
+
+In Part2:
+person.jar (my own code) is running in the class-path, but gson (which is the name of the automated module) is running
+in the module-path. This gives us reliable configuration but not strong encapsulation. Remember that an automated module is
+totally opened and exports all its packages.
+
+In Part3:
+We splitted our application into modules (main and models), and we also specified the configuration in the module-info.java
+files. Now the application is entirely running in the module-path. Remember that gson is an automated module which is totally
+opened and is exporting all its packages.
+
+In Part4:
+Now gson's source code was downloaded from github, then we generated the module-info.java file by using the jdeps command
+tool, and finally we compiled and built the gson module. At this point, our application is completely migrated and
+modularized, and we are also getting advantage of the reliable configuration and strong encapsulation provided by Java 9.

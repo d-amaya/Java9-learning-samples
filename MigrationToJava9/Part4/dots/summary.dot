@@ -1,0 +1,9 @@
+digraph "summary" {
+  "gson"                                             -> "java.base (java.base)";
+  "gson"                                             -> "java.sql (java.sql)";
+  "academy.learnprogramming.main"                    -> "academy.learnprogramming.models";
+  "academy.learnprogramming.main"                    -> "gson";
+  "academy.learnprogramming.main"                    -> "java.base (java.base)";
+  "academy.learnprogramming.models"                  -> "gson";
+  "academy.learnprogramming.models"                  -> "java.base (java.base)";
+}

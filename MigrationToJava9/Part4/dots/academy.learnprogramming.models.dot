@@ -1,0 +1,7 @@
+digraph "academy.learnprogramming.models" {
+    // Path: /Users/d-amaya/Desktop/Java9Learning/MigrationToJava9/Part4/mods/models.jar
+   "academy.learnprogramming.models"                  -> "academy.learnprogramming.models (academy.learnprogramming.models)";
+   "academy.learnprogramming.models"                  -> "com.google.gson.annotations (gson)";
+   "academy.learnprogramming.models"                  -> "java.lang (java.base)";
+   "academy.learnprogramming.models"                  -> "java.util (java.base)";
+}
